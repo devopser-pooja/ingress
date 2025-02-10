@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: airtag-deployment
+  namespace: dev
+  labels:
+    app: airtag
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: airtag
+  template:
+    metadata:
+      labels:
+        app: airtag
+    spec:
+      containers:
+      - name: airtag
+        image: 637423593321.dkr.ecr.us-east-1.amazonaws.com/airtag:latest
+        ports:
+        - containerPort: 80
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bike-deployment
+  namespace: dev
+  labels:
+    app: bike
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bike
+  template:
+    metadata:
+      labels:
+        app: bike
+    spec:
+      containers:
+      - name: bike
+        image: 637423593321.dkr.ecr.us-east-1.amazonaws.com/bike:latest
+        ports:
+        - containerPort: 80
+

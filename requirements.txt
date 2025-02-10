@@ -1,0 +1,7 @@
+
+				*******FOLLOW THE LINKS*******
+
+1]. https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html
+
+2]. https://docs.aws.amazon.com/eks/latest/userguide/lbc-manifest.html
+
