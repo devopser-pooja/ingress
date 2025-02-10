@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: airtag-deployment
-  namespace: dev
   labels:
     app: airtag
 spec:
@@ -27,7 +26,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: bike-deployment
-  namespace: dev
   labels:
     app: bike
 spec:
